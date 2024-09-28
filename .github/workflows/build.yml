@@ -39,7 +39,7 @@ jobs:
         with:
           context: ./
           platforms: linux/amd64
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           push: true
           labels: |
             org.opencontainers.image.source=${{github.server_url}}/${{github.repository}}
