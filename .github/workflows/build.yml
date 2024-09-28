@@ -11,7 +11,7 @@ on:
         description: Custom version of runner
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/actions-runner
+  IMAGE_NAME: d3lta/action-runner-runner
   
 jobs:
   build:
